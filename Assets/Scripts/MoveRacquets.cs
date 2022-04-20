@@ -6,12 +6,13 @@ using UnityEngine;
 public class MoveRacquets : MonoBehaviour
 {
 
-    [SerializeField] private GameObject _bot;
+    [SerializeField] 
+    private GameObject _bot;
 
-    private Vector3 touch;
-    private float touchX = 0f;
+    private Vector3 _touch;
+    private float _touchX = 0f;
 
-    private float direction;
+    private float _direction;
 
     void FixedUpdate()
     {
@@ -20,19 +21,19 @@ public class MoveRacquets : MonoBehaviour
             Touch tab = Input.GetTouch(0);
             if (tab.phase == TouchPhase.Moved)
             {
-                touch = tab.position;
-                touch = Camera.main.ScreenToWorldPoint(touch);
-                direction = 3f * Mathf.Abs(touch.x) / touch.x;
-                if (touch.x > touchX)
+                _touch = tab.position;
+                _touch = Camera.main.ScreenToWorldPoint(_touch);
+                _direction = 3f * Mathf.Abs(_touch.x) / _touch.x;
+                if (_touch.x > _touchX)
                 {
-                    direction = 7f;
+                    _direction = 7f;
                 }
                 else
                 {
-                    direction = -7f;
+                    _direction = -7f;
                 }
-                touchX = touch.x;
-                _bot.GetComponent<Rigidbody2D>().velocity = new Vector2(direction, 0);
+                _touchX = _touch.x;
+                _bot.GetComponent<Rigidbody2D>().velocity = new Vector2(_direction, 0);
             }
             else
             {
