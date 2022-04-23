@@ -12,6 +12,8 @@ public class MoveRacquets : MonoBehaviour
     private Vector3 _touch;
     private float _touchX = 0f;
 
+    private float _speed = 10f;
+
     private float _direction;
 
     void FixedUpdate()
@@ -26,14 +28,14 @@ public class MoveRacquets : MonoBehaviour
                 _direction = 3f * Mathf.Abs(_touch.x) / _touch.x;
                 if (_touch.x > _touchX)
                 {
-                    _direction = 7f;
+                    _direction = 1f;
                 }
                 else
                 {
-                    _direction = -7f;
+                    _direction = -1f;
                 }
                 _touchX = _touch.x;
-                _bot.GetComponent<Rigidbody2D>().velocity = new Vector2(_direction, 0);
+                _bot.GetComponent<Rigidbody2D>().velocity = new Vector2(_direction * _speed, 0);
             }
             else
             {

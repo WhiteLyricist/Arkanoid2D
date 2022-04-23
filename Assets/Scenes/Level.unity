@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4908107081655621125, guid: 544a0877f561b63489960de267c0a77c, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4908107081655621125, guid: 544a0877f561b63489960de267c0a77c, type: 3}
       propertyPath: m_TagString
@@ -553,7 +553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056080834}
   - component: {fileID: 1056080835}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: LWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -692,7 +692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320228291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.18, z: 0}
+  m_LocalPosition: {x: 0, y: -5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2048149333}
@@ -746,7 +746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342467168}
   - component: {fileID: 1342467169}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: RWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1091,7 +1091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076710908}
   - component: {fileID: 2076710909}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: TWall
   m_TagString: Racquet
   m_Icon: {fileID: 0}

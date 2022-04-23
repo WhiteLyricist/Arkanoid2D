@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2585272774880379925}
   - component: {fileID: -7158925493891055025}
   - component: {fileID: 6153537074327090321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Block6
   m_TagString: Blocks
   m_Icon: {fileID: 0}
@@ -127,3 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a61d57c4cc7f46747bed843a94cfb955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bonusPrefab:
+  - {fileID: 7445534467573619869, guid: fd400dae0a333a24b992128faf14e9db, type: 3}
+  - {fileID: 2150640260791251999, guid: d756ca0f8ee86524f92c5dd892e3b7e2, type: 3}
+  - {fileID: 1113222594768402011, guid: 79e913decefce1b43af0fa10d06564b9, type: 3}
